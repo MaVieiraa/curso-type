@@ -6,10 +6,10 @@ import { useAppThemeContext } from '../shared/context';
 export const AppRoutes = () => {
   const { toggleTheme } = useAppThemeContext();
 
- return(
+  return(
     <Routes>
-      <Route path="/pagina-inicial" element={<Button variant='contained' color='secondary' onClick=   {toggleTheme}>PAGINA</Button>}/>
+      <Route path="/pagina-inicial" element={<Button variant='contained' color='primary' onClick=   {toggleTheme}>Inicio</Button>}/>
       <Route path="*" element={<Navigate to="/pagina-inicial" />} />
     </Routes>
- );
-}
+  );
+};

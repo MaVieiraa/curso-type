@@ -1,28 +1,27 @@
 import { createTheme } from '@mui/material';
-import { cyan, pink } from '@mui/material/colors';
+import  {pink, blue, orange, cyan  }  from '@mui/material/colors';
 
 export const LightTheme = createTheme({
-    palette: {
-        primary: {
-            main: pink [700],
-            dark: pink [200], 
-            light: '[100]',
-            contrastText: '#ffffff',
+  palette: {
+    primary: {
+      main: '#bff4081',
+      dark: '#b22c5a', 
+      light: '#ff669a',
+      contrastText: '#ffffff',
 
-        },
+    },
 
-        secondary: {
-            main:  '[500]',
-            dark: pink [100], 
-            light: '[50]',
-            contrastText: '#ffffff',
+    secondary: {
+      main:  '#00b0ff',
+      dark: '#007bb2', 
+      light: '#33bfff',
+      contrastText: '#ffffff',
            
-        },
+    },
 
-        background: {
-            default: '#f7f6f3',
-            paper:'#ffffff', 
+    background: {
+      default: '#212121',
+      paper: '#ff9800', 
 
-        }
-    }
+    }}
 });
